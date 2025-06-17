@@ -1,0 +1,64 @@
+{
+    "test_cases": [
+        {
+            "id": "case_001",
+            "description": "车辆认证问题",
+            "text": "我今年35岁，月收入15000元，是一名IT工程师，有车有公积金，想借款50000元，期限12个月。我的车辆认证一直显示审核中，已经三天了，请帮忙看看是什么情况",
+            "images": ["images/vehicle_auth_1.jpg", "images/vehicle_auth_2.jpg"],
+            "expected_category": "车辆认证",
+            "expected_service_person": "林镇基",
+            "expected_loan_analysis": {
+                "是否贷款": true,
+                "放款机构": "小花钱包"
+            }
+        },
+        {
+            "id": "case_002",
+            "description": "人脸认证失败",
+            "text": "我今年28岁，月收入8000元，是一名销售，没有车，有公积金，想借款20000元，期限6个月。我的人脸认证一直失败，试了好几次都不行",
+            "images": ["images/face_auth_1.jpg"],
+            "expected_category": "人脸/身份认证",
+            "expected_service_person": "庄文哲",
+            "expected_loan_analysis": {
+                "是否贷款": true,
+                "放款机构": "小花钱包"
+            }
+        },
+        {
+            "id": "case_003",
+            "description": "扣款异常",
+            "text": "我今年45岁，月收入20000元，是个体商户，有车有公积金，有寿险，借款100000元，期限24个月。系统显示扣款失败，但是钱已经被扣了",
+            "images": ["images/payment_error_1.jpg", "images/payment_error_2.jpg"],
+            "expected_category": "扣款问题",
+            "expected_service_person": "付志磊",
+            "expected_loan_analysis": {
+                "是否贷款": true,
+                "放款机构": "小花钱包"
+            }
+        },
+        {
+            "id": "case_004",
+            "description": "前端页面显示异常",
+            "text": "我今年25岁，月收入12000元，是一名设计师，没有车，有公积金，想借款30000元，期限12个月。APP首页加载很慢，而且经常闪退",
+            "images": ["images/frontend_issue_1.jpg"],
+            "expected_category": "前端",
+            "expected_service_person": "肖雪",
+            "expected_loan_analysis": {
+                "是否贷款": true,
+                "放款机构": "小花钱包"
+            }
+        },
+        {
+            "id": "case_005",
+            "description": "催收问题",
+            "text": "我今年32岁，月收入18000元，是一名医生，有车有公积金，有寿险，借款80000元，期限18个月。收到催收短信，但是我已经还款了",
+            "images": ["images/collection_sms_1.jpg", "images/payment_proof_1.jpg"],
+            "expected_category": "催收",
+            "expected_service_person": "振琦",
+            "expected_loan_analysis": {
+                "是否贷款": true,
+                "放款机构": "小花钱包"
+            }
+        }
+    ]
+} 
